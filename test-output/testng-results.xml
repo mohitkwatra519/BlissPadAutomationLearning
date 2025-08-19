@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-19T16:31:14 IST" name="Default suite" finished-at="2025-08-19T16:31:54 IST" duration-ms="40038">
+    <groups>
+    </groups>
+    <test started-at="2025-08-19T16:31:14 IST" name="Default test" finished-at="2025-08-19T16:31:54 IST" duration-ms="40038">
+      <class name="blisspadsAutomation.TestCase.TestCase">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:blisspadsAutomation.TestCase.TestCase@662ac478]" started-at="2025-08-19T16:31:14 IST" name="submitOrder" data-provider="getsubmitOrderData" finished-at="2025-08-19T16:31:34 IST" duration-ms="19885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{freeship=Congrats! You are eligible for FREE Shipping, prodName=Bliss Organic Sanitary Pads XL Fluffy (6 Pads) | Rash and Itch Free, phoneNum=9876543213}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:blisspadsAutomation.TestCase.TestCase@662ac478]" started-at="2025-08-19T16:31:34 IST" name="tearDown" finished-at="2025-08-19T16:31:34 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:blisspadsAutomation.TestCase.TestCase@662ac478]" started-at="2025-08-19T16:31:34 IST" name="submitOrder" data-provider="getsubmitOrderData" finished-at="2025-08-19T16:31:54 IST" duration-ms="19669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{freeship=Congrats! You are eligible for FREE Shipping, prodName=Bliss Organic Sanitary Pads XL Fluffy (6 Pads) | Rash and Itch Free, phoneNum=9997777123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:blisspadsAutomation.TestCase.TestCase@662ac478]" started-at="2025-08-19T16:31:54 IST" name="tearDown" finished-at="2025-08-19T16:31:54 IST" duration-ms="138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- blisspadsAutomation.TestCase.TestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
