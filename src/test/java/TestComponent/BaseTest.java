@@ -8,6 +8,8 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -21,13 +23,19 @@ import PageObjects.HomePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
+	protected Logger logger = LogManager.getLogger(this.getClass());
 	public WebDriver driver ;
-	
+	Properties prop ;
 	public WebDriver initializeDriver() throws IOException {
-		Properties prop = new Properties();
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\resources\\GlobalData.properties");
-
-		prop.load(fis);
+		try {
+			prop = new Properties();
+			FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\resources\\GlobalData.properties");
+	
+			prop.load(fis);
+		}
+		catch (Exception e) {
+            logger.error("Failed to load config file: " + e.getMessage());
+        }
 		
 		String browserName = prop.getProperty("browser");
 		if(browserName.contains("chrome")) {

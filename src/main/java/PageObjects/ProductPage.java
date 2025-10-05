@@ -10,10 +10,17 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import blisspadsAutomation.AbstractComponents.commonUtility;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 public class ProductPage extends commonUtility{
+	private static final Logger logger = LoggerFactory.getLogger(ProductPage.class);
 	WebDriver driver ; 
 	
 	public ProductPage(WebDriver driver) {
@@ -43,7 +50,9 @@ public class ProductPage extends commonUtility{
 	}
 	
 	public ReviewPage selectProduct() {
+		waituntilClick(chooseProduct);
 		chooseProduct.click();
+		logger.info("Product selected successfully");
 		return new ReviewPage(driver);
 	}
 	
