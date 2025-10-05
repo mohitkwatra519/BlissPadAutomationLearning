@@ -282,3 +282,85 @@ Session ID: 2c5782e1c6bcd91cf6feac78f9a884c4
 	at jdk.proxy2.$Proxy30.click(Unknown Source) ~[?:?]
 	at PageObjects.cartPage.clickCheckout(cartPage.java:65) ~[classes/:?]
 	... 21 more
+2025-10-05 19:04:27,319 INFO blisspadsAutomation.TestCase.TestCase [main] Loading test data from DataProvider
+2025-10-05 19:04:27,321 INFO blisspadsAutomation.TestCase.TestCase [main] Total test data sets: 2
+2025-10-05 19:04:27,340 INFO blisspadsAutomation.TestCase.TestCase [main] ╔════════════════════════════════════════════════════════════╗
+2025-10-05 19:04:27,340 INFO blisspadsAutomation.TestCase.TestCase [main] ║         STARTING TEST: submitOrder                         ║
+2025-10-05 19:04:27,341 INFO blisspadsAutomation.TestCase.TestCase [main] ╚════════════════════════════════════════════════════════════╝
+2025-10-05 19:04:27,341 INFO blisspadsAutomation.TestCase.TestCase [main] Test Data: {freeship=Congrats! You are eligible for FREE Shipping, prodName=Bliss Organic Sanitary Pads XL Fluffy (6 Pads) | Rash and Itch Free, phoneNum=9876543213}
+2025-10-05 19:04:27,341 INFO blisspadsAutomation.TestCase.TestCase [main] Step 1: Launching application
+2025-10-05 19:04:34,021 INFO blisspadsAutomation.TestCase.TestCase [main] ✓ Home page loaded successfully
+2025-10-05 19:04:34,022 INFO blisspadsAutomation.TestCase.TestCase [main] Step 2: Navigating to Sanitary Napkins section
+2025-10-05 19:04:34,024 INFO PageObjects.HomePage [main] clicking on napkins button
+2025-10-05 19:04:35,790 INFO blisspadsAutomation.TestCase.TestCase [main] ✓ Product page displayed
+2025-10-05 19:04:35,790 INFO blisspadsAutomation.TestCase.TestCase [main] Step 3: Applying filters
+2025-10-05 19:04:42,084 INFO blisspadsAutomation.TestCase.TestCase [main] ✓ Filters applied successfully
+2025-10-05 19:04:42,085 INFO blisspadsAutomation.TestCase.TestCase [main] Step 4: Selecting product
+2025-10-05 19:04:49,759 INFO blisspadsAutomation.TestCase.TestCase [main] ✓ Product selected, review page displayed
+2025-10-05 19:04:49,759 INFO blisspadsAutomation.TestCase.TestCase [main] Step 5: Selecting pack
+2025-10-05 19:04:49,762 INFO PageObjects.ReviewPage [main] User is Clicking on pack button
+2025-10-05 19:04:49,980 INFO blisspadsAutomation.TestCase.TestCase [main] ✓ Pack selected
+2025-10-05 19:04:49,980 INFO blisspadsAutomation.TestCase.TestCase [main] Step 6: Increasing quantity
+2025-10-05 19:04:50,138 INFO blisspadsAutomation.TestCase.TestCase [main] ✓ Quantity increased
+2025-10-05 19:04:50,140 INFO blisspadsAutomation.TestCase.TestCase [main] Step 7: Adding product to cart
+2025-10-05 19:05:00,169 ERROR blisspadsAutomation.TestCase.TestCase [main] ╔════════════════════════════════════════════════════════════╗
+2025-10-05 19:05:00,169 ERROR blisspadsAutomation.TestCase.TestCase [main] ║         TEST FAILED: Exception Occurred                    ║
+2025-10-05 19:05:00,169 ERROR blisspadsAutomation.TestCase.TestCase [main] ╚════════════════════════════════════════════════════════════╝
+2025-10-05 19:05:00,170 ERROR blisspadsAutomation.TestCase.TestCase [main] Exception in test execution: Failed to click 'Add to Cart'. Element might be missing, not clickable, or blocked.
+exceptions.FrameworkExceptions$ElementNotFoundException: Failed to click 'Add to Cart'. Element might be missing, not clickable, or blocked.
+	at PageObjects.ReviewPage.clickAddtoCart(ReviewPage.java:55) ~[classes/:?]
+	at blisspadsAutomation.TestCase.TestCase.submitOrder(TestCase.java:74) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.11.0.jar:7.11.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.11.0.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[contains(text(), 'dAdd to cart')])[2]"}
+  (Session info: chrome=140.0.7339.208)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [024894ff91d6ce92fe00a3deea42e579, findElement {value=(//*[contains(text(), 'dAdd to cart')])[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\mohit\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60712}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60712/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 024894ff91d6ce92fe00a3deea42e579
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68) ~[selenium-support-4.35.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-4.35.0.jar:?]
+	at jdk.proxy2.$Proxy30.click(Unknown Source) ~[?:?]
+	at PageObjects.ReviewPage.clickAddtoCart(ReviewPage.java:53) ~[classes/:?]
+	... 27 more
